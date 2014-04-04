@@ -10,4 +10,5 @@ respawn
 env {{ key }}={{ value }}
 {% endfor %}
 
+chdir {{ env.HOME }}
 exec node {{ env.HOME }}/node_modules/hoodie-server/bin/start
