@@ -15,4 +15,4 @@ Tested on Ubuntu 13.10, but may work on earlier versions as well.
 
 ## Deploying
 
-To deploy new code, simply re-run `sudo /srv/hoodie_bootstrap.sh` or call Salt directly, `salt-call state.highstate --local`.
+To deploy new code, simply re-run `sudo /srv/hoodie_bootstrap.sh` or call Salt directly, `sudo salt-call state.highstate --local`.
