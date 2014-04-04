@@ -60,8 +60,9 @@ ssl_cert:
         - template: jinja
         - source: salt://hoodie_app/nginx.conf.jinja
         - defaults:
-            env: {{ pillar.env }}
+            home: {{ pillar.env.HOME }}
             domain: {{ pillar.domain }}
+            hoodie_url: http://127.0.0.1:6001
         - require:
             - pkg: nginx
         - watch_in:
