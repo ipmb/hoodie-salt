@@ -1,0 +1,13 @@
+start on startup and started couchdb
+stop on shutdown
+
+setuid hoodie
+setgid hoodie
+
+respawn
+
+{% for key,value in env.items() %}
+env {{ key }}={{ value }}
+{% endfor %}
+
+exec node {{ env.HOME }}/node_modules/hoodie-server/bin/start

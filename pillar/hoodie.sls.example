@@ -1,0 +1,11 @@
+git_clone_url: https://github.com/unbracketed/chord-guru.git
+domain: yourdomain.example.com
+
+# optional command to run after `npm install`
+#build_cmd: ./node_modules/gulp/bin/gulp.js build
+
+env:
+    COUCH_URL: http://127.0.0.1:5984
+    HOODIE_ADMIN_USER: admin
+    HOODIE_ADMIN_PASS: yoursecretpassword
+    HOME: /home/hoodie/app
