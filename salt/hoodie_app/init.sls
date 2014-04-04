@@ -74,6 +74,7 @@ ssl_cert:
         - require:
             - pkg: nginx
             - file: /etc/nginx/sites-available/hoodie.conf
+            - file: /etc/nginx/sites-enabled/default
             - module: ssl_cert
         - watch_in:
             - service: nginx
