@@ -16,3 +16,7 @@ Tested on Ubuntu 13.10, but may work on earlier versions as well.
 ## Deploying
 
 To deploy new code, simply re-run `sudo /srv/hoodie_bootstrap.sh` or call Salt directly, `sudo salt-call state.highstate --local`.
+
+## Notes
+
+Changing the CouchDB admin user or password after the initial deploy requires manually restarting CouchDB. This can be done via `sudo service couchdb restart`.
